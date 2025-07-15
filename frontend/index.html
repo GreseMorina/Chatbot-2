@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Rohde & Schwarz Chatbot Projekt</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts Link For Icons -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <h2>Chatverlauf</h2>
+      <span class="close-sidebar material-symbols-rounded">close</span>
+    </div>
+    <div class="sidebar-content">
+      <button id="new-chat-btn" class="new-chat-button">
+        <span class="material-symbols-rounded">add</span>
+        Neuer Chat erstellen
+      </button>
+      <div class="chat-history">
+        <!-- Chat history items will be added here dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#" class="menu-btn">
+            <span class="material-symbols-rounded">menu</span>
+          </a>
+        </div>
+      </div>
+      <div class="header-logo">
+        <img src="images/logo.jpg" alt="Rohde & Schwarz Logo" class="header-logo-img">
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+  <main class="container">
+    <!-- Chats container -->
+    <h1 class="default-heading">Willkommen beim Chatbot von <br> Rohde und Schwarz</h1>
+    <section class="chat-list">
+    </section>
+
+    <!-- Typing container -->
+    <section class="typing-area">
+      <div class="content-wrapper">
+        <!-- Predefined chat suggestion list -->
+        <ul class="suggestions-list">
+          <li class="suggestion-item"
+            data-message="Wer ist Rohde & Schwarz?">
+            <h2>Wer ist Rohde & Schwarz?</h2>
+            <p>Erzähle mir mehr davon</p>
+          </li>
+          <li class="suggestion-item"
+            data-message="Wo kann man Rohde & Schwarz in Bayern finden?">
+            <h2>Wo kann man Rohde & Schwarz in Bayern finden?</h2>
+            <p>Städte und Adresse</p>
+          </li>
+          <li class="suggestion-item"
+            data-message="Wie ist die Geschichte und Entwicklung des Werks?">
+            <h2>Wie ist die Geschichte und Entwicklung des Werks?</h2>
+            <p>Erzähle mir mehr davon</p>
+          </li>
+          <li class="suggestion-item"
+            data-message="Wie viele Mitarbeitende sind im Werk beschäftigt?">
+            <h2>Wie viele Mitarbeitende sind im Werk beschäftigt?</h2>
+            <p>In Teisnach, Bayern</p>
+          </li>
+        </ul>
+
+        <!-- Typing textarea content -->
+        <div class="typing-content">
+          <div class="typing-input">
+            <textarea spellcheck="false" placeholder="Send a message" required></textarea>
+            <span id="send-btn" class="icon material-symbols-rounded">send</span>
+          </div>
+          <div class="typing-controls">
+            <button id="send-btn-controls" class="send-button">Senden</button>
+          </div>
+        </div>
+        <br> <br>
+      </div>
+    </section>
+  </main>
+
+</body>
+
+</html>
