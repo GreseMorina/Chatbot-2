@@ -160,10 +160,6 @@ The application is fully responsive and works on:
 ## 📝 License
 This project is for educational and demonstration purposes.
 
-## 🤝 Contributing
-
-Feel free to submit issues and enhancement requests!
-
 ## 📞 Support
 
 For questions or support, please refer to the project documentation or create an issue in the repository.
@@ -171,4 +167,4 @@ For questions or support, please refer to the project documentation or create an
 ---
 
 **Note**: This is a frontend-only implementation. For production use, consider implementing proper server-side API handling and security measures. 
->>>>>>> ffab45b (Initial project upload)
+>>>>>>
